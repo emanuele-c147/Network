@@ -27,7 +27,7 @@ Il modello OSI è stato definito dall'ISO come modello di riferimento ed è divi
 #### L'ottavo e il nono livello
 Questi livelli non appartengono al modello OSI definito dall'ISO, ma a un linguaggio informale. Nella loro informalità però presentano due elementi costantemente presenti nella rete che influenzano come essa viene gestita, meritando dunque un accenno a riguardo.
 L'ottavo livello riguarda l'user e l'errore umano, come questo influenzi i sistemi reali e apra porte e considerazioni a nuovi rischi legati alla sicurezza informatica quali il phishing e il social engineering.
-Il nono livello riguarda la politica e il management, ossia l'influenza e i limiti che le policy di un organizzazione o delle leggi impongono alla rete.
+Il nono livello riguarda la politica e il management, ossia l'influenza e i limiti che le policy di un'organizzazione o delle leggi impongono alla rete.
 
 ### Il trasferimento dei dati
 Quando un dispositivo invia i dati a un altro avviene un incapsulamento dei dati che avviene dall'alto verso il basso (dal livello applicativo al fisico). Una volta raggiunti a destinazione i dati vengono estratti risalendo il modello dal livello più basso (il fisico) fino al più alto (l'applicativo). Ogni livello può comunicare solo con un livello appena sopra o appena sotto durante l'incapsulamento o il decapsulamento dei dati mentre dialoga con un livello della stessa altezza nello scambio di dati tra due dispositivi.
@@ -38,7 +38,7 @@ Il modello è puramente teorico e generale, non definisce uno specifico metodo d
 Un protocollo è una procedura e un formato standard che due dispositivi in comunicazione devono capire e accettare di usare per potersi parlare a vicenda.
 
 #### Protocol Data Unit (PDU)
-Quando i dati viaggiano tra i livelli vengono incapsulati. Il processo di incapsulamento crea un *Protocol Data Unit* (PDU) che è composto dai dati mandati insieme ai possibili header o footer aggiunti dal livello correnti e dai livelli superiori. Ogni livello incapsula la PDU ricevuta dal livello superiore aggiungendo, se previsto, le proprie informazioni di controllo.
+Quando i dati viaggiano tra i livelli vengono incapsulati. Il processo di incapsulamento crea un *Protocol Data Unit* (PDU) che è composto dai dati mandati insieme ai possibili header o footer aggiunti dal livello corrente e dai livelli superiori. Ogni livello incapsula la PDU ricevuta dal livello superiore aggiungendo, se previsto, le proprie informazioni di controllo.
 
 Ad esempio, per una pagina web su Ethernet, i protocolli standard utilizzati sono:
 - HTTP, usato per un primo incapsulamento a livello applicativo. I dati prendono il nome generico di *data* (dati).
@@ -69,7 +69,7 @@ Molti servizi su TCP/IP seguono il modello client-server per mettere in comunica
 ## Livelli ISO/OSI nel dettaglio
 
 ### Connessioni Fisiche e Data link
-Esistono diverse tecnologie che mettono a contatto i dispositivi. Alcune ormai obsolete, altre di attuale impiego. Sebbene nel modello OSI il livello fisico e quella di data link siano divisi, nella pratica e nelle tecnologie moderne si trovano spesso uniti un unico tipo di collegamento.
+Esistono diverse tecnologie che mettono a contatto i dispositivi. Alcune ormai obsolete, altre di attuale impiego. Sebbene nel modello OSI il livello fisico e quello di data link siano divisi, nella pratica e nelle tecnologie moderne si trovano spesso uniti un unico tipo di collegamento.
 
 #### Connessioni puramente fisiche
 A livello puramente fisico i tipi di collegamento più importanti riguardano:
@@ -93,7 +93,7 @@ Il doppino è composto da due cavi avvolti tra loro. Il suo connettore è chiama
 
 ##### Cavo ethernet
 Si tratta di un'evoluzione del doppino telefonico ed è caratterizzato da 4 coppie di fili ritorti per un totale di 8 cavi. Il suo connettore è l'RJ45.
-È un cavo di rete utilizzato per collegare dei dispositivi a una rete locale (LAN) o a Internet tramite un router o uno switch. Garantisce una connessione stabile, veloce e molto meno soggetto alle interferenze tipiche del Wi-Fi.
+È un cavo di rete utilizzato per collegare dei dispositivi a una rete locale (LAN) o a Internet tramite un router o uno switch. Garantisce una connessione stabile, veloce e molto meno soggetta alle interferenze tipiche del Wi-Fi.
 Esistono diverse tipologie per questo cavo. Le due differenze maggiori riguardano la velocità, definita in *bit rate*, ossia quanti bit passano al secondo, e la banda, cioè l’intervallo di frequenze che il cavo può trasportare bene. Una banda maggiore permette un bit rate maggiore. Queste caratteristiche dividono i cavi ethernet in diverse *cat*.
 
 | Tipo di cavo | Velocità massima | Larghezza di banda massima |
@@ -111,7 +111,7 @@ I cavi possono essere UTP, che sono cavi più semplici e comuni, o STP, che veng
 
 ##### Fibra ottica
 Trasmette i dati sotto forma di impulsi luminosi (generalmente laser o LED) che viaggiano all'interno di un filo di vetro o plastica molto sottile, detto core, circondato da un materiale, chiamato cladding, con indice di rifrazione minore di quello del core. Quando la luce colpisce l'interfaccia tra il core e il cladding con un angolo superiore all'angolo critico, essa rimbalza invece di uscire, mantiene la luce all'interno del core e guidandola lungo il cavo. 
-La fibra è superiore a un conduttore come il rame per la banda che è maggiore, per la minore attenuazione del segnale e l'immunità alle interferenze elettromagnetiche. È usata ad esempio nelle dorsali che collegano fisicamente i continenti oltreoceano o in delle LAN. La fibra può essere molti o mono modale. Quest'ultima è la più efficiente con un core molto fine (circa `9 * 10^-6 m`), un segnale laser alla sorgente, e una distanza che può arrivare a `100 km` di cavo.
+La fibra è superiore a un conduttore come il rame per la banda che è maggiore, per la minore attenuazione del segnale e l'immunità alle interferenze elettromagnetiche. È usata ad esempio nelle dorsali che collegano fisicamente i continenti oltreoceano o in delle LAN. La fibra può essere multimodale o monomodale. Quest'ultima è la più efficiente con un core molto fine (circa `9 * 10^-6 m`), un segnale laser alla sorgente, e una distanza che può arrivare a `100 km` di cavo.
 
 #### Elementi appartenenti al primo e al secondo livello
 Approfondiamo ora un dispositivo e due tecnologie ampiamente diffuse che uniscono le funzioni dei due livelli più bassi del modello ISO/OSI, ossia:
@@ -156,7 +156,7 @@ Il Wi-Fi ha diverse versioni che operano a tre diverse bande.
 | Wi‑Fi 4  | IEEE 802.11n  | 2,4/5 GHz   |                                                     |
 
 Aumentando la frequenza diminuisce la distanza raggiunta dalla connessione che però permette (insieme ad altri fattori) di ottenere maggiori prestazioni e velocità.
-Frequenze più alte inoltre dispongono di più canali, rendendo più veloce la connessione (è più difficile che si debba aspettare che un canale si liberi) e limitano il rischio di interferenza con altre onde della stessa frequenza. Un dispositivo può trasmettere e ricevere onde di frequenze diverse. La maggior parte dei dispositivi moderni riescono a sfruttare le frequenze più alte fino ai 5/6 Ghz mentre dispositivi più vecchi si fermano alle bande più basse.
+Frequenze più alte inoltre dispongono di più canali, rendendo più veloce la connessione (è più difficile che si debba aspettare che un canale si liberi) e limitano il rischio di interferenza con altre onde della stessa frequenza. Un dispositivo può trasmettere e ricevere onde di frequenze diverse. La maggior parte dei dispositivi moderni riescono a sfruttare le frequenze più alte fino ai 5/6 GHz mentre dispositivi più vecchi si fermano alle bande più basse.
 
 ##### La scheda di rete
 La scheda di rete o NIC (acronimo di _Network Interface Card_) è un dispositivo di livello 1 e 2 che fornisce un attacco fisico ai cavi e un punto di collegamento per il WiFi.  
@@ -171,7 +171,7 @@ Questo dispositivo inoltre è il pezzo hardware che contiene l'indirizzo MAC del
 ##### Switches e Bridges
 Questi dispositivi analizzano i frame ricevuti, trovano l'indirizzo MAC di destinazione e li spediscono alla porta appropriata.
 I bridges e gli switches soddisfano gli stessi bisogni ma i secondi permettono di collegare moltissimi più dispositivi insieme, sono più veloci (lettura MAC a livello hardware e non software) e offrono un controllo migliore sulle collisioni.
-Il termine porta quando si parla degli switch fa riferimento all'interfaccia fisica (il buco vero e proprio dove si collegano i cavi) che il singolo dispositivo identifica con un indirizzo logico (ad esempio un nome o un mumero). Il termine perciò non deve essere confuso con quello delle porte puramente virtuali assegnate ai protocolli.
+Il termine porta quando si parla degli switch fa riferimento all'interfaccia fisica (il buco vero e proprio dove si collegano i cavi) che il singolo dispositivo identifica con un indirizzo logico (ad esempio un nome o un numero). Il termine perciò non deve essere confuso con quello delle porte puramente virtuali assegnate ai protocolli.
 Per determinare come direzionare il traffico usano una tabella degli indirizzi MAC (*MAC address table*) salvata internamente allo switch.
 Per facilitare il funzionamento di tali tabelle prendiamo in esame una rete composta da un server (MAC: 00:00:00:00:00:01, porta e3), un pc (MAC: 00:00:00:00:00:02, porta e2) e un laptop (MAC: 00:00:00:00:00:03, porta e1) dove il pc prova a comunicare col server.
 
@@ -181,14 +181,14 @@ All'inizio, quando non sono ancora presenti o sono scadute le associazioni tra l
 | --- | ----- |
 |     |       |
 
-Quando uno dei dispositivi inizia a mandare dei frame (che come abbiamo visto contengono i MAC del mittente e del destinatario), lo switch li riceve e, non avendo salvato nella tabelle le informazioni del primo dispositivo, crea una nuova riga contenente il suo indirizzo MAC e la porta a lui corrispondente.
+Quando uno dei dispositivi inizia a mandare dei frame (che come abbiamo visto contengono i MAC del mittente e del destinatario), lo switch li riceve e, non avendo salvato nella tabella le informazioni del primo dispositivo, crea una nuova riga contenente il suo indirizzo MAC e la porta a lui corrispondente.
 
 | MAC               | Porta |
 | ----------------- | ----- |
 | 00:00:00:00:00:02 | e2    |
 
 Siccome la tabella contiene solo il MAC del mittente lo switch non sa a che porta direzionare i dati in uscita e decide dunque di provare tutte le porte eccetto quella da cui provengono i dati. Questo processo è definito *unknown unicast flooding* o più semplicemente *flooding*.
-Se il destinatario è collegato allo switch verrà trovato e, assumendo che voglia rispondere al mittente, manderà un nuovo frame contente, come al solito, il MAC di destinazione e quello di partenza. Lo switch aggiungerà allora alla tabella MAC una riga che associa l'indirizzo del secondo dispositivo alla sua corrispondente porta fisica dello switch.
+Se il destinatario è collegato allo switch verrà trovato e, assumendo che voglia rispondere al mittente, manderà un nuovo frame contenente, come al solito, il MAC di destinazione e quello di partenza. Lo switch aggiungerà allora alla tabella MAC una riga che associa l'indirizzo del secondo dispositivo alla sua corrispondente porta fisica dello switch.
 
 | MAC               | Porta |
 | ----------------- | ----- |
@@ -203,12 +203,12 @@ Riassumendo lo switch a ogni trasferimento legge la tabella, se incontra:
 - dispositivi noti -> passa subito i dati attraverso la porta corretta
 
 ##### L'Indirizzo MAC (Media Access Control)
-È un identificativo a 48 bit bruciato nella memoria della scheda di rete (è inciso nella scheda e non può essere cambiato fisicamente anche se a livello superiore può essere mascherato o randomizzato). I 48 bit del MAC sono suddivisi in 12 cifre esadecimali: le prime 6 cifre individuano l’organizzazione assegnataria e i successivi sono assegnati da questa organizzazione.  
-L'indirizzo è scritto come stringa di numeri esadecimali divisi in 6 coppie separata dai due punti o dal trattino centrale (es. `00:1A:2B:3C:4D:5E`).  
+È un identificativo a 48 bit bruciato nella memoria della scheda di rete (è inciso nella scheda e non può essere cambiato fisicamente anche se a livello superiore può essere mascherato o randomizzato). I 48 bit del MAC sono suddivisi in 12 cifre esadecimali: le prime 6 cifre individuano l’organizzazione assegnataria e le successive sono assegnati da questa organizzazione.  
+L'indirizzo è scritto come stringa di numeri esadecimali divisi in 6 coppie separate dai due punti o dal trattino centrale (es. `00:1A:2B:3C:4D:5E`).  
 Identifica in modo univoco un NIC e viene usato nei processi delle reti locali. Generalizzando potremmo dire che identifica in modo univoco un dispositivo ma solo se questi ha solo una scheda di rete.
 
 #### CSMA/CD e CSMA/CA
-Questi due protocolli di secondo livello permetto di gestire le collisioni. In particolare il primo gestisce una collisione solo dopo che essa avviene, il secondo la previene. CSMA/CD è tipico delle connessioni cablate (ad esempio per il cavo coassiale) mentre CSMA/CA è usato dalle connessioni wireless (ad esempio è usato dal Wi-Fi).
+Questi due protocolli di secondo livello permettono di gestire le collisioni. In particolare il primo gestisce una collisione solo dopo che essa avviene, il secondo la previene. CSMA/CD è tipico delle connessioni cablate (ad esempio per il cavo coassiale) mentre CSMA/CA è usato dalle connessioni wireless (ad esempio è usato dal Wi-Fi).
 
 La sigla CSMA significa:
 - CS (_carrier sense_): controlla costantemente il canale per vedere se stanno già avvenendo delle comunicazioni.
@@ -216,19 +216,19 @@ La sigla CSMA significa:
 
 Le due sigle finali invece significano:
 - CD (*collision detection*): quando il mezzo è libero si aspetta un brevissimo tempo, si ricontrolla se il canale è libero e nel caso si manda il frame. Durante l'intera trasmissione l'adattatore monitora la rete e se non riceve segnali considera il frame spedito. Se l'adattatore invece riceve, durante una trasmissione, un segnale da un altro adattatore, arresta la trasmissione e trasmette un segnale di disturbo che avverte le altre stazioni dell'avvenuta collisione e bloccando la trasmissione. Dopo aver abortito la trasmissione le stazioni attendono un tempo aleatorio prima della ritrasmissione. CSMA/CD era un protocollo usato in passato in assenza di tecnologia più moderne, con tecniche quali la commutazione Ethernet e la comunicazione full-duplex si è persa la necessità di questo protocollo.
-- CA (_collision avoidance_): se la rete è libera viene aspettato un brevissimo tempo e, se ancora libera, viene spedito il frame. Se si riceve un riscontro (ACK) dal destinatario il frame è arrivato con successo altrimenti si assume che il frame non è stato ricevuto correttamente (collisione, interferenza, destinazione fuori portata), e si ritrasmette dopo un backoff (tempo i attesa) casuale.
+- CA (_collision avoidance_): se la rete è libera viene aspettato un brevissimo tempo e, se ancora libera, viene spedito il frame. Se si riceve un riscontro (ACK) dal destinatario il frame è arrivato con successo altrimenti si assume che il frame non è stato ricevuto correttamente (collisione, interferenza, destinazione fuori portata), e si ritrasmette dopo un backoff (tempo di attesa) casuale.
 
 ### Protocollo IP
 
 #### Introduzione
 Il protocollo IP (_internet protocol_) è l'esempio più significativo del livello 3 del modello OSI ed è lo standard per il trasferimento dei pacchetti attraverso internet.  
-L'indirizzo IP è un'etichetta assegnata a ogni dispositivo connesso a una rete che usa questo protocollo per le comunicazioni. A differenza dell'indirizzo MAC questo numero cambia e può anche essere impostato, entro certi limiti, a scelta dall'utente. A differenza dell'indirizzo MAC, l'IP non è legato a un pezzo hardware ma a una interfaccia, ciò significa che un singolo dispositivo può avere molteplici indirizzi IP a lui associati.
+L'indirizzo IP è un'etichetta assegnata a ogni dispositivo connesso a una rete che usa questo protocollo per le comunicazioni. A differenza dell'indirizzo MAC questo numero cambia e può anche essere impostato, entro certi limiti, a scelta dall'utente. A differenza dell'indirizzo MAC, l'IP non è legato a un pezzo hardware ma a un'interfaccia, ciò significa che un singolo dispositivo può avere molteplici indirizzi IP a lui associati.
 Esistono due versioni degli indirizzi IP: IPv4 e IPv6. Le due versioni non possono comunicare direttamente tra loro, ma coesistono sulla stessa rete e sullo stesso dispositivo con il dual stack; la comunicazione tra le due versioni richiede meccanismi di traduzione o di tunneling. Per il traffico IPv4–IPv4 e IPv6–IPv6 non serve alcuna traduzione.
 
 #### IPv6
 Si tratta della versione più recente, nata dalla necessità di avere di più indirizzi IP.
 L'indirizzo è lungo 128 bit, permettendo la presenza di `2^128` indirizzi unici (circa `10^38`), un numero sufficiente per i dispositivi presenti oggigiorno (non più sostenibile invece dai limitati 4 miliardi di indirizzi utilizzabili con IPv4).
-Gli indirizzi sono rappresentati da otto gruppi da quattro cifre esadecimali, separate dai due punti e accorciati secondo alcune regole per essere scritti nel modo più corto possibile. Ad esempio un indirizzo come `2001:0db8:0000:0000:0000:8a2e:0370:7334` diventa `2001:db8::8a2e:370:7334`.
+Gli indirizzi sono rappresentati da otto gruppi da quattro cifre esadecimali, separati dai due punti e accorciati secondo alcune regole per essere scritti nel modo più corto possibile. Ad esempio un indirizzo come `2001:0db8:0000:0000:0000:8a2e:0370:7334` diventa `2001:db8::8a2e:370:7334`.
 
 #### IPv4
 È la versione più utilizzata anche se si sta transizionando verso IPv6.
@@ -243,7 +243,7 @@ L'indirizzo IP è composto di due parti: l'indirizzo di rete e l'indirizzo dell'
 Facendo un AND logico tra l'indirizzo IP e la netmask si ottiene l'indirizzo di rete.
 
 ##### Default Netmask
-Ci sono poi le netmask di default che hanno degli ottetti composti da tutti 1 o tutti 0. Le mask sono scritte come uno slash seguito dal numero di bit pieni. Avremmo dunque mask come /8, /16 o /24. Una mask /8 di legge "a 8 bit", una /16 "a 16 bit" e via andare.
+Ci sono poi le netmask di default che hanno degli ottetti composti da tutti 1 o tutti 0. Le mask sono scritte come uno slash seguito dal numero di bit pieni. Avremmo dunque mask come /8, /16 o /24. Una mask /8 si legge "a 8 bit", una /16 "a 16 bit" e via dicendo.
 
 | Classe dell'indirizzo | Bit per ID rete / ID host | Default subnet mask |
 | --------------------- | ------------------------- | ------------------- |
@@ -291,7 +291,7 @@ TCP e UDP sono i protocolli di livello 4 più comuni e presenti nella maggior pa
 - Riordina i segmenti ricevuti in un ordine specifico. Con messaggi molto grandi i dati vengono divisi in segmenti più piccoli che a destinazione devono essere riordinati
 
 ##### TCP segment
-Il segmento TCP è composto dai dati preceduto da un header. Al suo interno troviamo:
+Il segmento TCP è composto dai dati preceduti da un header. Al suo interno troviamo:
 - Source port e Destination port  (16 bit per porta, 32 totali): il numero di porta sull'host del mittente e del destinatario associati alla connessione TCP.
 - Sequence number (32 bit): conta i byte del payload a partire da un valore iniziale casuale (ISN). Se analizziamo un traffico in cui abbiamo un sequence number di 1000 e inviamo un payload da 500 byte il sequence number si aggiorna 1500. Questo permette di riordinare i pacchetti quando arrivano a destinazione e ad assicurarsi che non ci sono state perdite nel flusso.
 - Acknowledgment number (32 bit): indica il prossimo byte atteso. Conferma la corretta ricezione dei segmenti se il numero qui contenuto è quello aspettato dall'host. È valido solo se nel segmento la flag `ACK` è impostata.
@@ -305,7 +305,7 @@ Il segmento TCP è composto dai dati preceduto da un header. Al suo interno trov
 - Checksum (16 bit): risultato della funzione checksum sul segmento. Serve al destinatario per controllarne l'integrità e se necessario farselo rispedire.
 - Urgent pointer (16 bit): usato solo se presenta la flag URG.
 - Options (0 - 40 byte): è un campo facoltativo. Un dato significativo che può essere presente è la dimensione massima del segmento (MSS, *Maximum Segment Size*) esclusi gli header, un parametro che indica la quantità massima di dati (in byte) che un host è in grado di accettare in un singolo segmento. Si calcola togliendo all'MTU (di cui si è parlato nella sezione sull'Ethernet) la dimensione degli header IP e TCP. Tipicamente è di 1460 byte con MTU 1500, IPv4 e header TCP senza opzioni.
-- Data (massimo MSS bytes): il campo contente i dati o parte di essi se vengono spezzati in più segmenti.
+- Data (massimo MSS bytes): il campo contenente i dati o parte di essi se vengono spezzati in più segmenti.
 
 ##### Apertura: Three-way handshake
 Il *three-way handshake* è un iniziale scambio di segmenti tra due dispositivi che precede la comunicazione dei dati.
@@ -314,7 +314,7 @@ Il *three-way handshake* è un iniziale scambio di segmenti tra due dispositivi 
 - Il primo dispositivo risponde con un segmento avente flag `ACK` a 1 e i due iniziano a comunicare i dati.
 
 ##### Chiusura: Four-way handshake e Three way handshake
-Per chiudere una connessione TCP viene usato il *four-way handshake*, ogni tanto semplificato nel *tree-way handshake*. Entrambi devono assicurare chiusure complete e pulite della connessione.
+Per chiudere una connessione TCP viene usato il *four-way handshake*, ogni tanto semplificato nel *three-way handshake*. Entrambi devono assicurare chiusure complete e pulite della connessione.
 Nel primo caso il dispositivo manda un segmento `FIN`, a cui il destinatario risponde con un `ACK`. A questo punto i ruoli si invertono con il secondo dispositivo che invia un `FIN` a cui segue un `ACK` di risposta dal primo dispositivo.
 In alcuni casi il secondo dispositivo unisce il suo segmento `ACK` con quello `FIN` in uno scambio simile a quello dell'apertura. Lo scambio inizia con un segmento FIN a cui segue un segmento `FIN/ACK` e si conclude con un segmento `ACK`.
 
@@ -398,7 +398,7 @@ Emanuele Canazza - [GitHub Profile](https://github.com/emanuele-c147)
 - IEEE 802
 	- In particolare vedere IEEE 802.3, IEEE 802.11
 - [Documentazione RFC](https://www.rfc-editor.org/)
-	- In particolare vedere RCF 791, RCF 768, RCF 1918, RCF 9114.
+	- In particolare vedere RFC 791, RFC 768, RFC 1918, RFC 9114.
 - ITU-T standards
 	- In particolare vedere ITU-T X.200
 - TIA standards
